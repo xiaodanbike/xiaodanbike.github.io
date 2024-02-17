@@ -95,7 +95,7 @@ a {
 
 
 .nav-link {
-	color:#fff !important;
+	color:#ffffff !important;
 	opacity: 1 !important;
 	font-weight: 200;
 }
@@ -113,14 +113,12 @@ a {
 
 
 
-#pic,#department, #intro{
+#pic,#department{
 	padding:0% 1.5%;
 	margin-bottom:10px;
 	display:block;
 }
-#department{
-	font-size:0.8em;
-}
+
 .note{
 	font-style:italic;
 	font-size:1em;
@@ -128,7 +126,7 @@ a {
 #main{
 	max-width:1170px;
 	background-color:#fff;
-	padding:4% 2% 2% 2%;
+	padding:0.3% 2% 2% 2%;
 	margin-bottom:20px;
 	clear:both;
 	overflow: auto;
@@ -138,6 +136,7 @@ a {
 	background-color:#fff;
 	padding:0.3% 2% 2% 2%;
 	margin-top:2.5%;
+	position: relative; 
 }
 
 .thumbs-section img{
@@ -193,7 +192,7 @@ a {
 	padding-left:2.5%;
 }
 
-#Publications, #members, #members2{
+  #members, #members2{
 	clear:both;
 	padding:0.3% 2% 2% 2%;
 	background-color:#fff;
@@ -204,7 +203,16 @@ a {
     list-style-image: url("bg_overlay-2.png");
     margin-bottom: 0.7em;
 }
-
+#Teaching li {
+    line-height: 1.7em;
+    list-style-image: url("bg_overlay-2.png");
+    margin-bottom: 0.7em;
+}
+#Services li {
+    line-height: 1.7em;
+    list-style: None;
+    margin-bottom: 0.3em;
+}
 .news_content{
 	font-weight: bold;
     /* display: block; */
@@ -245,7 +253,7 @@ font-style:italic;
 .title-date {
 	font-size: 0.8em;
 }
-#main, #Publications, .column, #news, #members, .thumbs-section {
+#main, #Publications,#Projects, .column, #news, #members, .thumbs-section {
 	-moz-border-radius: 4px;
 border-radius: 4px;
 -webkit-box-shadow: 0 6px 5px -7px #333333;
@@ -257,7 +265,7 @@ margin-bottom:20px;
 
 @media all and (min-width: 480px) {
 #main{
-	padding:0.5% 0%;
+	/* padding:0.5% 0%; */
 	margin-bottom:20px;
 }	
 	
@@ -279,19 +287,38 @@ margin-bottom:20px;
 .columnmembers p {
 	font-size: 0.9em;
 }
+#imgbox{
+	
+	width:20%;
+	height:250px;
+	margin-top:1%;
+	position: relative;
+	padding:0.3% 1% 1% 1%;
+	float:left;
+	
+	/* line-height: 1.6em; */
+}
 
 #department {
 	float:left;
-	width:30%;
-	font-size:0.8em;
+	width:100%;
+	height:200px;
+	margin-top:2%;
+	font-size:0.9em;	
 }
 
 
 #intro{
 	float:left;
-	width:45%;
+	width:75%;
 	margin-top:1%;
-	line-height: 1.6em;
+	height:400px;
+	margin-top:1%;
+	margin-left:3%;
+	line-height: 1.4em;
+	
+	
+	
 }
 #columnswrapper{
 	clear:both;
@@ -343,6 +370,7 @@ div#columnswrapper div:first-child, div#columnswrapper div:last-child {
 	margin：0
 	padding:0% 2.5% 1% 2.5%;
 	margin-bottom:2%;
+	
 }
 
 .pro-list {
@@ -357,7 +385,7 @@ div#columnswrapper div:first-child, div#columnswrapper div:last-child {
 	float: left;
 	width: 20rem;
 	margin-top: 1%;
-	margin-right: 3.5%;
+	margin-right: 3%;
 	margin-bottom: 1%;
 	background-color: #fff;
 }
@@ -405,4 +433,47 @@ div#columnswrapper div:first-child, div#columnswrapper div:last-child {
 	border-left: 5px solid #f0753c;
 	padding-left: 10px;
 	padding-left: 0.1rem;
+}
+
+#projecttab div {
+	float: left;
+	list-style: none;
+	width: 33%;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	text-align: center;
+	color:#0088CC !important;
+	opacity: 1 !important;
+	font-weight: 200;
+}
+
+
+
+#projectcontainer {
+	padding:0.3% 0% 2% 0%;
+	margin-top:-2.5%;
+	position: relative; 
+	background-color:#fff;
+	
+}
+
+#content1, #content2, #content3 {
+	width: 100%;
+
+	padding:1% 0% 0% 0%;
+	position: relative;
+	top: 0px;
+	left: 0;
+}
+
+
+#tab1, #content1 {
+	background-color: #edebe4;
+}
+#tab2, #content2 {
+	background-color: #fdefda;
+}
+#tab3, #content3 {
+	background-color: #dbeff4;
 }
